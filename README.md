@@ -12,6 +12,7 @@ It uses the following JavaScript´s capabilities:
 
 ## Example
 
+```
 var
   types = [ // Our array
     {
@@ -50,4 +51,6 @@ types[0] === types.standard // Display True
 
 // BONUS: it´s keep the length untouched
 types.length // Display 2
+
+```
 
