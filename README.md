@@ -8,8 +8,9 @@ It uses the following JavaScript´s capabilities:
 
 - Set/Get a object´s property in the Array form;
 - When a Array got it value from another array, it portion of memory is a link to the another array. So, when its value change, the other array´s value change too;
-- BONUS: it´s keep the integrity length of the Array.
-- 
+- Bonus: it´s keep the integrity length of the Array.
+ 
+
 ## TODO
 
 - Error throwing;
