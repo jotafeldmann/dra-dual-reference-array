@@ -6,9 +6,18 @@ Take a collection (a array with objects); a common property of the collection, w
 
 It uses the following JavaScript´s capabilities:
 
-- Set/Get a object´s property in the Array form
-- When a Array got it value from another array, it portion of memory is a link to the another array. So, when its value change, the other array´s value change too.
-- BONUS: it´s keep the integrity length of the Array
+- Set/Get a object´s property in the Array form;
+- When a Array got it value from another array, it portion of memory is a link to the another array. So, when its value change, the other array´s value change too;
+- BONUS: it´s keep the integrity length of the Array.
+- 
+## TODO
+
+- Error throwing;
+- Treat double indexes property (maybe a dev function parameter to solve, with default strategy, like '_' or cardinal);
+- Treat reserved name property (again, same as before);
+- Convert to module/extension/closure pattern;
+- Make it snippet-friendly;
+- Laugh about the complexity of it and the problems about.
 
 ## Example
 
