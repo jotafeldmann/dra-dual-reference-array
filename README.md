@@ -1,5 +1,6 @@
 # Mesmerize
-Process a array, binding a property value as identifier, making it accessable through the index AND the identifier
+Process a array, binding a property value as identifier, making it accessable through the index AND the identifier.
+This is just a case, not a API neither a framework.
 
 ## What it must do
 Take a collection (a array with objects); a common property of the collection, with a unique string value; and make the collection accessable by it index (the default way) AND it string value, like a property.
