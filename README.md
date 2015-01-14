@@ -1,8 +1,8 @@
 # Tokenizer
-Process a array, binding a property value as a property, making the array value available through the index AND the identifier. This is just a case, not a API neither a framework.
+Makes a array's value available through a property´s unique value, keeping the index untouched. This is just a case, not a API neither a framework.
 
 ## What it must do
-Take a collection (a array with objects); a common property of the collection, with a unique string value; and returning a new array, with the collection available by it index (the default way) AND it string value, like a property.
+Take a collection (a array with objects); a common property of the collection, with a unique string value; and return a new array, with the collection available by it index (the default way) AND it string value, like a property.
 
 It uses the following JavaScript's capabilities:
 
@@ -14,7 +14,7 @@ It uses the following JavaScript's capabilities:
 
 - Error throwing;
 - Treat double indexes property: by default, duplicate indexes must generate a property with a array (obj.token[0], obj.token[1]) and allow a function parameter for custom solutions;
-- Treat reserved name property: by default, properties with reserved words must be converted to use "_"  (underscore) in the first char place and allow a function parameter for custom solutions;
+- Treat a property with a reserved word: by default, properties with reserved words must be converted to use "_"  (underscore) in the first char place and allow a function parameter for custom solutions;
 - Convert to module/extension/closure pattern;
 - Make it snippet-friendly;
 - Laugh about the complexity and the problems about it :D
