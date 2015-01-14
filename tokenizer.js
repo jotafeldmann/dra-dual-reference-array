@@ -5,13 +5,14 @@
  * More: https://github.com/jspades/tokenizer
  **/
 
-function Tokenizer ( arrayToMesmerize , stringPropertyToIdentify ) {
+function Tokenizer ( arrayOriginalArray , stringPropertyToIdentify ) {
+
+    var arrayToTokenize = arrayOriginalArray;
     
-    var arrayToTokenize = arrayToMesmerize;
-    
-    for ( var count = 0, q = arrayToMesmerize.length ; count < q ; count++ ) {
-        arrayToTokenize[arrayToTokenize[count][stringPropertyToIdentify]] = arrayToTokenize[count];
+    for ( var count = 0, q = arrayToTokenize.length ; count < q ; count++ ) {
+      arrayToTokenize[arrayToTokenize[count][stringPropertyToIdentify]] = arrayToTokenize[count];
     }
     
     return arrayToTokenize;
+    
 }
