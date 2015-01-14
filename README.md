@@ -1,25 +1,23 @@
 # Tokenizer
-Process a array, binding a property value as identifier, making it accessable through the index AND the identifier.
-This is just a case, not a API neither a framework.
+Process a array, binding a property value as a property, making the array value available through the index AND the identifier. This is just a case, not a API neither a framework.
 
 ## What it must do
-Take a collection (a array with objects); a common property of the collection, with a unique string value; and returning a new array, with the collection accessable by it index (the default way) AND it string value, like a property.
+Take a collection (a array with objects); a common property of the collection, with a unique string value; and returning a new array, with the collection available by it index (the default way) AND it string value, like a property.
 
-It uses the following JavaScript´s capabilities:
+It uses the following JavaScript's capabilities:
 
-- Set/Get a object´s property in the Array form;
-- When a Array got it value from another array, it portion of memory is a link to the another array. So, when its value change, the other array´s value change too;
-- Bonus: it´s keep the integrity length of the Array.
- 
+- Set/Get a object's property in the Array form;
+- When a Array got it value from another array, the portion of memory is a link to the another array. So, when that value change, the other array's value change too;
+- Bonus: it's keep the integrity of Array's length.
 
 ## TODO
 
 - Error throwing;
-- Treat double indexes property (maybe a dev function parameter to solve, with default strategy, like '_' or cardinal);
-- Treat reserved name property (again, same as before);
+- Treat double indexes property: by default, duplicate indexes must generate a property with a array (obj.token[0], obj.token[1]) and allow a function parameter for custom solutions;
+- Treat reserved name property: by default, properties with reserved words must be converted to use "_"  (underscore) in the first char place and allow a function parameter for custom solutions;
 - Convert to module/extension/closure pattern;
 - Make it snippet-friendly;
-- Laugh about the complexity of it and the problems about.
+- Laugh about the complexity and the problems about it :D
 
 ## Example
 
@@ -28,40 +26,40 @@ var
   types = [ // Our array
     {
       id : 0,
-      token : 'standard', // It´s a common property, with unique values
+      token : 'standard', // It's a common property, with unique values
       label : 'Standard Type',
       data : { dummy : 'whoomy' }
     },
     {
       id : 1,
       token : 'another', // Again
-      label : 'Another Happy Type'
+      label : 'Another happy Type'
     }
   ]
 ;
 
-// At this time, I just can access the array, trough the index
-console.log ( types[0] ); // Display Object {...}
+// At this time, I just can access the array, through the index
+console.log ( types[0] ); // Object {...}
 
 // Now, the magic
-types = Tokenizer ( types , "token" );
+types = Tokenizer ( types , 'token' );
 
-// Then, the same array is accessable by its property
-console.log ( types.standard ); //  Display Object {...}
+// Then, the same array is available by it's property
+console.log ( types.standard ); // Object {...}
 
-// If some property is changed, its reflects in both ways
+// If some property is changed, the change is reflected in both ways
 types.standard.label = 'Label changed';
-console.log ( types.standard.label , types[0].label ); // Display 'Label changed' , 'Label changed';
+console.log ( types.standard.label , types[0].label ); // 'Label changed' , 'Label changed';
 
 // The versa is the same
 types[0].label = 'Label again';
-console.log ( types.standard.label , types[0].label ); // Display 'Label again' , 'Label again';
+console.log ( types.standard.label , types[0].label ); // 'Label again' , 'Label again';
 
-// and the object comparison
-types[0] === types.standard // Display True
+// And the object comparison remains
+types[0] === types.standard // True
 
-// BONUS: it´s keep the length untouched
-types.length // Display 2
+// BONUS: it's keep the length untouched
+types.length // 2
 
 ```
 
