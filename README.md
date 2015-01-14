@@ -1,9 +1,9 @@
-# Mesmerize
+# Tokenizer
 Process a array, binding a property value as identifier, making it accessable through the index AND the identifier.
 This is just a case, not a API neither a framework.
 
 ## What it must do
-Take a collection (a array with objects); a common property of the collection, with a unique string value; and make the collection accessable by it index (the default way) AND it string value, like a property.
+Take a collection (a array with objects); a common property of the collection, with a unique string value; and returning a new array, with the collection accessable by it index (the default way) AND it string value, like a property.
 
 It uses the following JavaScript´s capabilities:
 
@@ -44,7 +44,7 @@ var
 console.log ( types[0] ); // Display Object {...}
 
 // Now, the magic
-Mesmerize ( types , "token" );
+types = Tokenizer ( types , "token" );
 
 // Then, the same array is accessable by its property
 console.log ( types.standard ); //  Display Object {...}
