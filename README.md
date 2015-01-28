@@ -63,3 +63,5 @@ types.length // 2
 
 ```
 
+## Real world application
+Like @myfingersarebroken told me, a good aplication: in Angular´s JSON to Scope data, that needs to receive some identification on the same scope.
