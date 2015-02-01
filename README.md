@@ -1,5 +1,5 @@
 # Tokenizer
-Makes a collection's value available through a property´s unique value, keeping the index untouched. This is just a case, not a API neither a framework. I never seen something like this before, so decided to doc.
+Makes a collection's value available through a property´s unique value, keeping the index untouched. This is just a case, not a API neither a framework. I've never seen something like this before, so decided to doc.
 
 ## What it must do
 Take a collection (a array with objects); a common property of the collection, with a unique string value; and return a new array, with the collection available by it index (the default way) AND it string value, like a property.
