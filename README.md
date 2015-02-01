@@ -64,4 +64,5 @@ types.length // 2
 ```
 
 ## Real world application
-Like https://github.com/myfingersarebroken told me, a good aplication: in Angular´s JSON to Scope data, that needs to receive some identification on the same scope.
+My last case: In Angular, just convert the JSON to Scope data;
+The first use: use a array of templates like object, and access the properties
