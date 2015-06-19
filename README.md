@@ -1,4 +1,4 @@
-# Tokenizer
+# Array to Object
 Makes a collection's value available through a property´s unique value, keeping the index untouched. This is just a case, not a API neither a framework. I've never seen something like this before, so decided to doc.
 
 ## What it must do
