@@ -1,6 +1,6 @@
 # DRA: Dual Reference Array
 
-Makes a array's object available through the same array's namespace, trough a property, keeping the index untouched.
+Makes a array's object available through the same array's namespace, through a property, keeping the index untouched.
 This is just a pattern, not a API neither a framework. I never saw something like this before, so decided to study it.
 
 ## What it must do
