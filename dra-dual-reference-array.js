@@ -44,6 +44,9 @@
 		    return arrNewArrayToReturn;
 		    
 		}
+		
+		// You can use the explicit method to achieve the same result and improve readability
+		DualReferenceArray.convertPropsToObject = DualReferenceArray;
 
 		return DualReferenceArray;
 
