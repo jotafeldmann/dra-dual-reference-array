@@ -56,6 +56,10 @@ fields[0] === fields._email // True
 // BONUS: it keeps the array's length untouched
 fields.length // 2
 
+// BONUS: You can use the explicit method to achieve the same result and improve readability
+// Suggestion by Raul Oliver
+DRA.convertPropsToObject ( fields , 'fieldName' );
+
 ```
 
 ## It uses the following JavaScript's capabilities:
