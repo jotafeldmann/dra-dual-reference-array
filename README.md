@@ -4,7 +4,7 @@ Makes an array's object available through the same array's namespace, through a 
 This is just a pattern, not a API neither a framework. I never saw something like this before, so decided to study it.
 
 ## Long history version
-[Read my detailed article at Medium](https://medium.com/@neandertalk/the-javascript-dual-reference-array-dra-or-how-to-use-a-array-like-a-object-fd681c7cd20a#.44iyuae1a)
+[Read my detailed article at Medium](https://medium.com/@jotafeldmann/the-javascript-dual-reference-array-dra-or-how-to-use-a-array-like-a-object-fd681c7cd20a#.6q5lrmgel)
 
 ## What it must do
 
