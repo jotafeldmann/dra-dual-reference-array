@@ -85,4 +85,4 @@ DRA.convertPropsToObject ( fields , 'fieldName' );
 
 ## License
 
-[MIT License](https://github.com/jspades/dra/blob/master/LICENSE) © Jorge Feldmann (JSpades)
+[MIT License](https://github.com/jotafeldmann/llicense/blob/master/LICENSE.md) © Jorge Feldmann (JSpades)
