@@ -11,7 +11,7 @@ This is just a pattern, not a API neither a framework. I never saw something lik
 - **The Array:** Mind a array, with a collection (a array with objects and, at least, one common property);
 - **The Property:** Select a common property of the collection, with a unique string value;
 - **The DRA:** In the same array, create a property with the string value, which makes the collection available by it index (the default way) AND it string value, like a property.
-- 
+ 
 
 ## Play with it
 
