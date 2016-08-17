@@ -2,7 +2,7 @@
  * DRA - DUAL REFERENCE ARRAY
  * Makes a array's value available through a objects's property, in the same array
  * Author: Jorge Feldmann (jotafeldmann) <https://github.com/jotafeldmann>
- * Docs and examples: https://github.com/jotafeldmann/dra
+ * Docs and examples: https://github.com/jotafeldmann/dra-dual-reference-array
  * 2013 Jorge Feldmann (jotafeldmann) 
  * MIT Licensed
  */
