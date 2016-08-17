@@ -1,9 +1,9 @@
 /*!
  * DRA - DUAL REFERENCE ARRAY
  * Makes a array's value available through a objects's property, in the same array
- * Author: Jorge Feldmann (JSpades) <https://github.com/jspades>
- * Docs and examples: https://github.com/jspades/dra
- * 2013 Jorge Feldmann (JSpades) 
+ * Author: Jorge Feldmann (jotafeldmann) <https://github.com/jotafeldmann>
+ * Docs and examples: https://github.com/jotafeldmann/dra
+ * 2013 Jorge Feldmann (jotafeldmann) 
  * MIT Licensed
  */
 
