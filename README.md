@@ -23,7 +23,9 @@ You can test it at [https://tonicdev.com/jotafeldmann/dra-dual-reference-array](
 ## Hot to use
 
 - Clone
-    git clone https://github.com/jotafeldmann/dra-dual-reference-array
+```bash
+git clone https://github.com/jotafeldmann/dra-dual-reference-array
+```
 - Import dra-dual-reference-array.js in your code
 - Create a code/paste the code bellow in the console/file:
 
