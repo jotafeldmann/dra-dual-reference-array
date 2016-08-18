@@ -12,7 +12,15 @@ This is just a pattern, not a API neither a framework. I never saw something lik
 - **The Property:** Select a common property of the collection, with a unique string value;
 - **The DRA:** In the same array, create a property with the string value, which makes the collection available by it index (the default way) AND it string value, like a property.
 
-## Example
+## NPM/Node.js version
+
+You can use the project over the [NPM/Node.js version](https://github.com/jotafeldmann/dra-dual-reference-array/tree/master/npm)
+
+## Hot to use
+
+- Clone
+- Import dra-dual-reference-array.js in your code
+- Create a code/paste the code bellow in the console/file:
 
 ```
 var
