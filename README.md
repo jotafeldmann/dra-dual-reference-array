@@ -16,7 +16,7 @@ This is just a pattern, not a API neither a framework. I never saw something lik
 
 You can use the project over the [NPM/Node.js version](https://github.com/jotafeldmann/dra-dual-reference-array/tree/master/npm)
 
-## Play it
+## Play with it
 
 You can test it at [https://tonicdev.com/jotafeldmann/dra-dual-reference-array](https://tonicdev.com/jotafeldmann/dra-dual-reference-array)
 
