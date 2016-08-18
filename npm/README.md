@@ -72,26 +72,9 @@ DRA.convertPropsToObject ( fields , 'fieldName' );
 
 ```
 
-## It uses the following JavaScript's capabilities:
+## More
 
-- Set/Get a object's property in the Array form;
-- When a Array got it value from another array, the portion of memory is a link to the another array. So, when that value change, the other array's value change too;
-- Bonus: keeps the integrity of Array's length.
-
-## TODO
-
-- Examples
-- Tests
-- Error throwing;
-- Treat same name properties: duplicate indexes must generate a error or a property with a array (obj.fieldName[0], obj.fieldName[1]) and allow a function parameter for custom solutions;
-- A option to change/remove the _ (underscore) of the names: by default, all properties contain _ (underscore) at first char position, to avoid collision with reserved words;
-
-## Real world application
-
-- The DRA behavior looks like the  [Java LinkedMap from Apache's Commons Collections Behavior](https://commons.apache.org/proper/commons-collections/apidocs/org/apache/commons/collections4/map/LinkedMap.html) (thanks to @gilmargr for the insight)
-- My last case: In Angular, convert the JSON array to $scope data;
-- When developing a API's fields list validation, I can use the same namespace to iterate (array) or call the direct property's name;
-- The first case: iterate through array of templates like objects, and access the properties directly, calling the name of the template.
+Read the [original file for more information](https://github.com/jotafeldmann/dra-dual-reference-array/blob/master/README.md#it-uses-the-following-javascripts-capabilities)
 
 ## License
 
