@@ -29,7 +29,7 @@ git clone https://github.com/jotafeldmann/dra-dual-reference-array
 - Import dra-dual-reference-array.js in your code
 - Create a code/paste the code bellow in the console/file:
 
-```
+```javascript
 var
   fields = [ // Our array
     {
@@ -57,13 +57,15 @@ console.log ( fields._email ); // Object {...}
 
 // If some property is changed, the change is reflected in both ways
 fields._email.label = 'Devs are disciples of Thomas the Apostle';
-console.log ( fields._email.label , fields[0].label );
+
 // 'Devs are disciples of Thomas the Apostle' , 'Devs are disciples of Thomas the Apostle'
+console.log ( fields._email.label , fields[0].label );
 
 // The versa is the same, the ARRAY's REFERENCE can be accessed in DUAL ways
 fields[0].label = 'We need to see to believe, show me the code';
-console.log ( fields._email.label , fields[0].label );
+
 // 'We need to see to believe, show me the code' , 'We need to see to believe, show me the code'
+console.log ( fields._email.label , fields[0].label );
 
 // And the object comparison remains
 fields[0] === fields._email // True
