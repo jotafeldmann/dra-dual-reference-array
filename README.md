@@ -31,28 +31,30 @@ git clone https://github.com/jotafeldmann/dra-dual-reference-array
 
 ```javascript
 var
-  fields = [ // Our array
+  // Our array
+  fields = [
     {
       id : 0,
-      fieldName : 'email', // It's a common property, with unique values
+      // fieldName is a common property with unique values
+      fieldName : 'email',
       label : 'Email',
       data : { dummy : 'whoomy' }
     },
     {
       id : 1,
-      fieldName : 'another', // Again
+      fieldName : 'another',
       label : 'Another field'
     }
   ]
 ;
 
-// At this time, I just can access the array, through the index
+// At this time I just can access the array through the index
 console.log ( fields[0] ); // Object {...}
 
-// Now, the magic
+// Now the magic
 fields = DRA ( fields , 'fieldName' );
 
-// Then, the same array's value is available by it's common property unique name
+// Then the same array's value is available by it's common property unique name
 console.log ( fields._email ); // Object {...}
 
 // If some property is changed, the change is reflected in both ways
