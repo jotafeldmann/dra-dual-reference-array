@@ -8,8 +8,8 @@ This is just a pattern, not a API neither a framework. I never saw something lik
 
 ## What it must do
 
-- **The Array:** Mind a array, with a collection (a array with objects and, at least, one common property);
-- **The Property:** Select a common property of the collection, with a unique string value;
+- **The Array:** Mind an array, with a collection (a array with objects and, at least, one common property);
+- **The Property:** Select a common property of the collection, with an unique string value;
 - **The DRA:** In the same array, create a property with the string value, which makes the collection available by it index (the default way) AND it string value, like a property.
 
 ## NPM/Node.js version
@@ -83,8 +83,8 @@ DRA.convertPropsToObject ( fields , 'fieldName' );
 
 ## It uses the following JavaScript's capabilities:
 
-- Set/Get a object's property in the Array form;
-- When a Array got it value from another array, the portion of memory is a link to the another array. So, when that value change, the other array's value change too;
+- Set/Get object's property in the Array form;
+- When the Array got it value from another array, the portion of memory is a link to the another array. So, when value change, the other array's value change too;
 - Bonus: keeps the integrity of Array's length.
 
 ## TODO
@@ -92,7 +92,7 @@ DRA.convertPropsToObject ( fields , 'fieldName' );
 - Examples
 - Tests
 - Error throwing;
-- Treat same name properties: duplicate indexes must generate a error or a property with a array (obj.fieldName[0], obj.fieldName[1]) and allow a function parameter for custom solutions;
+- Treat same name properties: duplicate indexes must generate a error or a property with the array (obj.fieldName[0], obj.fieldName[1]) and allow a function parameter for custom solutions;
 - A option to change/remove the _ (underscore) of the names: by default, all properties contain _ (underscore) at first char position, to avoid collision with reserved words;
 
 ## Real world application
