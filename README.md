@@ -104,4 +104,4 @@ DRA.convertPropsToObject ( fields , 'fieldName' );
 
 ## License
 
-[MIT License](https://github.com/jotafeldmann/license/blob/master/LICENSE.md) © Jorge Feldmann (jotafeldmann)
+[MIT License](https://github.com/jotafeldmann/license/blob/master/LICENSE.md) - Jorge Feldmann (jotafeldmann)
