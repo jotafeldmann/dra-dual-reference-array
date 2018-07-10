@@ -101,7 +101,3 @@ DRA.convertPropsToObject ( fields , 'fieldName' );
 - My last case: In Angular, convert the JSON array to $scope data;
 - When developing a API's fields list validation, I can use the same namespace to iterate (array) or call the direct property's name;
 - The first case: iterate through array of templates like objects, and access the properties directly, calling the name of the template.
-
-## License
-
-[MIT License](https://github.com/jotafeldmann/license/blob/master/LICENSE.md) - Jorge Feldmann (jotafeldmann)
