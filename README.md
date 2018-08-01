@@ -1,33 +1,12 @@
 # DRA - Dual Reference Array
 
-Makes an array's object available through the same array's namespace, through a property, keeping the index untouched.
+Use the same JS object like an array or a map.
+
 This is just a pattern, not a API neither a framework. I never saw something like this before, so decided to study it.
 
-## Long history version
-[Read my detailed article at Medium](https://medium.com/@jotafeldmann/the-javascript-dual-reference-array-dra-or-how-to-use-a-array-like-a-object-fd681c7cd20a#.6q5lrmgel)
+You got this `const field = [{ name: 'email', value: 'bla@bla.com' }]`, then you can use this `field.email`, accessing the same reference.
 
-## What it must do
-
-- **The Array:** Mind an array, with a collection (a array with objects and, at least, one common property);
-- **The Property:** Select a common property of the collection, with an unique string value;
-- **The DRA:** In the same array, create a property with the string value, which makes the collection available by it index (the default way) AND it string value, like a property.
-
-## NPM/Node.js version
-
-You can use the project over the [NPM/Node.js version](https://github.com/jotafeldmann/dra-dual-reference-array/tree/master/npm)
-
-## Play with it
-
-You can test it at [https://tonicdev.com/jotafeldmann/dra-dual-reference-array](https://tonicdev.com/jotafeldmann/dra-dual-reference-array)
-
-## Hot to use
-
-- Clone
-```bash
-git clone https://github.com/jotafeldmann/dra-dual-reference-array
-```
-- Import dra-dual-reference-array.js in your code
-- Create a code/paste the code bellow in the console/file:
+## Example
 
 ```javascript
 var
@@ -80,6 +59,32 @@ fields.length // 2
 DRA.convertPropsToObject ( fields , 'fieldName' );
 
 ```
+
+## Long history version
+[Read my detailed article at Medium](https://medium.com/@jotafeldmann/the-javascript-dual-reference-array-dra-or-how-to-use-a-array-like-a-object-fd681c7cd20a#.6q5lrmgel)
+
+## What it must do
+
+- **The Array:** Mind an array, with a collection (a array with objects and, at least, one common property);
+- **The Property:** Select a common property of the collection, with an unique string value;
+- **The DRA:** In the same array, create a property with the string value, which makes the collection available by it index (the default way) AND it string value, like a property.
+
+## NPM/Node.js version
+
+You can use the project over the [NPM/Node.js version](https://github.com/jotafeldmann/dra-dual-reference-array/tree/master/npm)
+
+## Play with it
+
+You can test it at [https://tonicdev.com/jotafeldmann/dra-dual-reference-array](https://tonicdev.com/jotafeldmann/dra-dual-reference-array)
+
+## Hot to use
+
+- Clone
+```bash
+git clone https://github.com/jotafeldmann/dra-dual-reference-array
+```
+- Import dra-dual-reference-array.js in your code
+- Create a code/paste the example code in the browser's console
 
 ## It uses the following JavaScript's capabilities:
 
