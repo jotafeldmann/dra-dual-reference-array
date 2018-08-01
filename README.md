@@ -4,7 +4,9 @@ Use the same JS object like an array or a map.
 
 This is just a pattern, not an API neither a framework. I never saw something like this before, so decided to study it.
 
-You got this `const field = [{ name: 'email', value: 'bla@bla.com' }]`, then you can use this `field.email`, accessing the same reference.
+You got this `const fields = [{ name: 'email', value: 'bla@bla.com' }]`, then you can use this `fields.email.value` and `fields[0].value`, accessing the same memory reference.
+
+I've just created the atribute `fields.email` over your selected property `name`.
 
 ## Example
 
@@ -15,13 +17,13 @@ var
     {
       id : 0,
       // fieldName is a common property with unique values
-      fieldName : 'email',
+      name : 'email',
       label : 'Email',
       data : { dummy : 'whoomy' }
     },
     {
       id : 1,
-      fieldName : 'another',
+      name : 'another',
       label : 'Another field'
     }
   ]
@@ -31,7 +33,7 @@ var
 console.log ( fields[0] ); // Object {...}
 
 // Now the magic
-fields = DRA ( fields , 'fieldName' );
+fields = DRA ( fields , 'name' );
 
 // Then the same array's value is available by it's common property unique name
 console.log ( fields._email ); // Object {...}
@@ -56,7 +58,7 @@ fields.length // 2
 
 // BONUS: You can use the explicit method to achieve the same result and improve readability
 // Suggestion by Raul Oliver
-DRA.convertPropsToObject ( fields , 'fieldName' );
+DRA.convertPropsToObject ( fields , 'name' );
 
 ```
 
