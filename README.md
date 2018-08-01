@@ -2,7 +2,7 @@
 
 Use the same JS object like an array or a map.
 
-This is just a pattern, not a API neither a framework. I never saw something like this before, so decided to study it.
+This is just a pattern, not an API neither a framework. I never saw something like this before, so decided to study it.
 
 You got this `const field = [{ name: 'email', value: 'bla@bla.com' }]`, then you can use this `field.email`, accessing the same reference.
 
