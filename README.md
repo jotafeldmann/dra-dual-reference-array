@@ -108,3 +108,4 @@ git clone https://github.com/jotafeldmann/dra-dual-reference-array
 - My last case: In Angular, convert the JSON array to $scope data;
 - When developing a API's fields list validation, I can use the same namespace to iterate (array) or call the direct property's name;
 - The first case: iterate through array of templates like objects, and access the properties directly, calling the name of the template.
+- Lodash `keyBy` solves that question. Please check [https://lodash.com/docs/4.17.10#keyBy](https://lodash.com/docs/4.17.10#keyBy);
